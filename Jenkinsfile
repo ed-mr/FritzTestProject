@@ -2,9 +2,14 @@ pipeline {
     agent any
 
     stages {
-        stage('Do nothing') {
+        stage('Build') {
             steps {
-                sh '/bin/false'
+                sh 'make'
+            }
+        }
+        stage('Test') {
+            steps {
+                sh './main'
             }
         }
     }
