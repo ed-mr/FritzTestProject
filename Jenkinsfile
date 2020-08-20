@@ -12,6 +12,11 @@ pipeline {
                 sh './main'
             }
         }
+        stage('Finish') {
+            steps {
+                sh 'echo its me'
+            }
+        }
     }
 }
 
