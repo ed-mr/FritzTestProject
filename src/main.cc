@@ -8,7 +8,6 @@ int main() {
   int i = 42;
   printf("hello xxx: calc(%d) = %d\n", i, calc(i));
   if ( calc(42) != 101 ) return -1;
-  if ( calc(42) != 101 ) return -1;
   return 0;
 }
 
